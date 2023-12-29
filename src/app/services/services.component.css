@@ -1,0 +1,63 @@
+.wave > div{
+    width: 90px;
+    height: 20px;
+}
+.moving-line{
+    position: relative;
+    width: 100%;
+}
+@keyframes moveWaves {
+    0% {
+      transform: translateX(-20px);
+    }
+    100% {
+      transform: translateX(20px);
+    }
+  }
+/* 
+  .moving-line {
+    animation: moveWaves 2s linear infinite;
+  } */
+.service{
+    /* border:1px solid #0389ff; */
+    position: relative;
+    min-height: 230px;
+    border: 1px solid #dee2e6;
+    overflow: hidden;
+    border-radius: 3px;
+    background: #fff;
+}
+.service:hover .service-subtitle{
+    bottom: 7px;
+    opacity: 1;
+    visibility: visible;
+}
+.service:hover .icon-service{
+    margin-top: 5px;
+    width: 45px;
+    margin-bottom: 15px;
+}
+.service:hover .service-title{
+    color: #0389ff;
+}
+.icon-service{
+    margin-top: 40px;
+    width: 55px;
+    margin-bottom: 25px;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+.service-title{
+    font-weight: 400;
+    font-size: 17px;
+}
+.service-subtitle{
+    font-size: 14px;
+    position: absolute;
+    bottom: -100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+}
+

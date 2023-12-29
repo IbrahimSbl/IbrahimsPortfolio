@@ -1,0 +1,42 @@
+#about-section{
+    padding-top: 170px;
+}
+
+
+#about-section > div{
+    background-color: #0389ff;
+    padding: 50px;
+}
+.author-wrap{
+   position: relative;
+   margin-top: -100px;
+}
+.author-wrap > img{
+    width: 200px;
+    height: 200px;
+}
+#typing-container {
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+}
+
+#typing-cursor {
+    display: inline-block;
+    font-size: 3vw;
+    /* border-right: 2px solid #4e4e4e; Cursor effect */
+}
+.typing-cursor--blink{
+    animation: blink-caret 1s step-end infinite;
+}
+@keyframes blink-caret {
+    from , to {
+        color: #414141;
+    }
+    50% {
+        color: transparent ;
+    }
+}
+

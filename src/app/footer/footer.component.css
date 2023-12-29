@@ -1,0 +1,26 @@
+.site-footer{
+    font-weight: 400;
+    font-size: 13px;
+    background-color: #ffffff;
+}
+.site-footer .splitter{
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 1px;
+    width: 100%;
+    background-color: #bdc9c9;
+}
+.site-footer h3 ,.site-footer address{
+    color: rgb(70, 70, 70);
+}
+.links a{
+    text-decoration: none;
+    color: rgb(107, 107, 103);
+}
+.links a:hover{
+    text-decoration: none;
+    color: #0389ff;
+}

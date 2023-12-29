@@ -1,0 +1,41 @@
+
+<nav class="site-nav dark mb-5 site-navbar-target">
+  <div class="container">
+    <div class=" d-flex justify-content-between">
+      <a href="index.html" class="logo m-0"
+        >Minimal<span class="text-primary">.</span></a
+      >
+
+      <a
+        (click)="navbarOpened()"
+        [ngClass]="isNavbarOpened ? 'd-none' : 'd-inline-block'"
+        class="ml-auto float-end"
+      >
+        <span><img src="../../assets/img/menuToggle.svg" alt="" srcset="" style="width: 30px;"></span>
+      </a>
+    </div>
+  </div>
+</nav>    
+<div [ngClass]="isNavbarOpened ? 'd-inline-block site-mobile-menu' : 'd-none'" id="main-navbar" class="navbar d-flex flex-column justify-content-start float-end">
+    
+    <span class="navCloseToggle"
+        (click)="navbarOpened()"
+    >       
+        <img src="../../assets/img/closeToggle.svg" />
+    </span>
+
+    <ul >
+        <li><a routerLink="/" routerLinkActive="activeLink" class="nav-link activeLink" (click)="navbarOpened()">Home</a></li>
+        <li><a routerLink="#portfolio-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Portfolio</a></li>
+        <li><a routerLink="#about-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">About</a></li>
+        <li><a routerLink="#services-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Services</a></li>
+        <li><a routerLink="#contact-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Contact us</a></li>
+    </ul>
+</div>
+<!-- <div  
+  [ngClass]="isNavbarOpened ? '': 'd-none'"
+  (click)="navbarOpened()"
+  class="navbar-overlay"
+>
+</div> -->
+

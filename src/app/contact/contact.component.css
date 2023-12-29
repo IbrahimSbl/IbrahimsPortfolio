@@ -1,0 +1,44 @@
+.wave > div{
+    width: 90px;
+    height: 20px;
+}
+.moving-line{
+    position: relative;
+    width: 100%;
+}
+/* Form specific styles */
+.form-control {
+    border: none;
+    font-size: 13px;
+    height: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+    border-bottom: 1px solid #43434d;
+    border-radius: 0;
+}
+    .form-control:active, .form-control:focus {
+        border-color: #0389ff;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        background: transparent;
+    }
+textarea.form-control {
+    height: auto;
+}
+
+#map {
+    position: relative;
+    height: 300px;
+}
+#map iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    /* min-height: 400px; */
+    height: 300px;
+    position: absolute;
+}
+
