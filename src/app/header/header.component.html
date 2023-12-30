@@ -1,5 +1,9 @@
 
-<nav class="site-nav dark mb-5 site-navbar-target">
+<nav 
+  [ngClass]="showNavbar ? 'visible' : 'd-none'"
+  class="site-nav dark sticky-top  mb-5 " 
+  id="header-section"
+  >
   <div class="container">
     <div class=" d-flex justify-content-between">
       <a href="index.html" class="logo m-0"
@@ -16,7 +20,11 @@
     </div>
   </div>
 </nav>    
-<div [ngClass]="isNavbarOpened ? 'd-inline-block site-mobile-menu' : 'd-none'" id="main-navbar" class="navbar d-flex flex-column justify-content-start float-end">
+<div 
+  [ngClass]="isNavbarOpened ? 'd-inline-block site-mobile-menu' : 'd-none'" 
+  id="main-navbar" 
+  class="navbar d-flex flex-column justify-content-start float-end"
+  >
     
     <span class="navCloseToggle"
         (click)="navbarOpened()"
@@ -25,17 +33,17 @@
     </span>
 
     <ul >
-        <li><a routerLink="/" routerLinkActive="activeLink" class="nav-link activeLink" (click)="navbarOpened()">Home</a></li>
-        <li><a routerLink="#portfolio-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Portfolio</a></li>
-        <li><a routerLink="#about-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">About</a></li>
-        <li><a routerLink="#services-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Services</a></li>
-        <li><a routerLink="#contact-section" routerLinkActive="activeLink" class="nav-link" (click)="navbarOpened()">Contact us</a></li>
+        <li><a routerLink="/" class="nav-link " (click)="navbarOpened()">Home</a></li>
+        <li><a fragment="about-section" routerLink="." class="nav-link" (click)="navbarOpened()">About</a></li>
+        <li><a fragment="services-section" routerLink="/" class="nav-link" (click)="navbarOpened()">Services</a></li>
+        <li><a fragment="projects-section" routerLink="/" class="nav-link" (click)="navbarOpened()">Projects</a></li>
+        <li><a fragment="contact-section" routerLink="/" class="nav-link" (click)="navbarOpened()">Contact us</a></li>
     </ul>
 </div>
-<!-- <div  
+<div  
   [ngClass]="isNavbarOpened ? '': 'd-none'"
   (click)="navbarOpened()"
   class="navbar-overlay"
 >
-</div> -->
+</div>
 
