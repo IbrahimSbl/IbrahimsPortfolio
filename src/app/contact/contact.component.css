@@ -1,11 +1,4 @@
-.wave > div{
-    width: 90px;
-    height: 20px;
-}
-.moving-line{
-    position: relative;
-    width: 100%;
-}
+
 /* Form specific styles */
 .form-control {
     border: none;

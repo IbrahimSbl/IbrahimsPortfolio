@@ -1,6 +1,6 @@
 <div class="portfolio-section pt-5 pb-0" id="projects-section">
     <div class="container">
-      <div class="row mb-4">
+      <div class="row mb-4" data-aos="zoom-in">
         <div class="col-lg-7 text-center mx-auto">
           <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Projects</strong></h2>
           <p class="gsap-reveal-hero">The Big Oxmox advised her not to do so, because there were thousands of bad Commas.</p>
@@ -15,8 +15,63 @@
           </div>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" data-aos-duration="2000">
         <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of projectList;let index = index">
+                <ng-template carouselSlide [id]="''+index">
+                    <div 
+                        class="portfolio-card-container"
+                        
+                        >
+                        <a 
+                            class="portfolio-card"
+                            (click)="navigateToDetail(index)"
+                            >
+                            <img  
+                                [src]="'../../assets/img/projects/'+slide.imgSrc" 
+                                class="portfolio-card-img" 
+                                [alt]="slide.title"
+                            >    
+                            <span class="portfolio-card-overlay">
+                                <span class="portfolio-card-caption">
+                                    <h4 id="cat_1">{{slide.title}}<br>{{slide.category}}</h4>
+                                    <p 
+                                        class="font-weight-normal">
+                                        <span class="badge bg-success" *ngFor="let front of slide.frontEnd">{{front}}</span>
+                                        <span class="badge bg-warning" *ngFor="let back of slide.backEnd">{{back}}</span>
+                                    </p>
+                                </span>                         
+                            </span>                     
+                        </a>
+                    </div>
+                </ng-template>  
+            </ng-container>
+            <!-- <ng-template carouselSlide>
+                <div class="portfolio-card-container">
+                    <a href="#" class="portfolio-card">
+                        <img id="img_1" src="../../assets/img/projects/Restaurant website.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 id="cat_1">Restaurant website<br>Web Development</h4>
+                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">HTML</span><span class="badge bg-success">CSS</span><span class="badge bg-success">JavaScript</span><span class="badge bg-success">Bootstrap</span><span class="badge bg-warning">PHP</span><span class="badge bg-warning">MYSQL</span></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </ng-template>  
+            <ng-template carouselSlide>
+                <div class="portfolio-card-container">
+                    <a href="#" class="portfolio-card">
+                        <img id="img_1" src="../../assets/img/projects/Airline reservation.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 id="cat_1">Airline Reservation System<br>Desktop Application Development</h4>
+                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">JavaFX</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span><span class="badge bg-warning">MSSQL</span><span class="badge bg-warning">Java</span></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </ng-template>  
             <ng-template carouselSlide>
                 <div class="portfolio-card-container">
                     <a href="#" class="portfolio-card">
@@ -24,6 +79,32 @@
                         <span class="portfolio-card-overlay">
                             <span class="portfolio-card-caption">
                                 <h4 id="cat_1">Book shop<br>Desktop Application Development</h4>
+                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">JavaFX</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span><span class="badge bg-warning">MSSQL</span><span class="badge bg-warning">Java</span></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </ng-template>  
+            <ng-template carouselSlide>
+                <div class="portfolio-card-container">
+                    <a href="#" class="portfolio-card">
+                        <img id="img_1" src="../../assets/img/projects/CV database website.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 id="cat_1">CV database website<br>Web Development</h4>
+                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-warning">C#</span><span class="badge bg-warning">ASP.Net Core5</span><span class="badge bg-warning">MSSQL</span><span class="badge bg-success">Visual Studio</span></p>
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </ng-template>  
+            <ng-template carouselSlide>
+                <div class="portfolio-card-container">
+                    <a href="#" class="portfolio-card">
+                        <img id="img_1" src="../../assets/img/projects/Calendar.jpg" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                <h4 id="cat_1">Calendar<br>Web Development</h4>
                                 <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">Java</span><span class="badge bg-success">JavaFX</span><span class="badge bg-success">MSSQL</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span></p>
                             </span>                         
                         </span>                     
@@ -43,68 +124,7 @@
                     </a>
                 </div>
             </ng-template>  
-            <ng-template carouselSlide>
-                <div class="portfolio-card-container">
-                    <a href="#" class="portfolio-card">
-                        <img id="img_1" src="../../assets/img/projects/Book shop.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4 id="cat_1">Book shop<br>Desktop Application Development</h4>
-                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">Java</span><span class="badge bg-success">JavaFX</span><span class="badge bg-success">MSSQL</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span></p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </ng-template>  
-            <ng-template carouselSlide>
-                <div class="portfolio-card-container">
-                    <a href="#" class="portfolio-card">
-                        <img id="img_1" src="../../assets/img/projects/Book shop.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4 id="cat_1">Book shop<br>Desktop Application Development</h4>
-                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">Java</span><span class="badge bg-success">JavaFX</span><span class="badge bg-success">MSSQL</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span></p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </ng-template>  
-            <ng-template carouselSlide>
-                <div class="portfolio-card-container">
-                    <a href="#" class="portfolio-card">
-                        <img id="img_1" src="../../assets/img/projects/Book shop.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4 id="cat_1">Book shop<br>Desktop Application Development</h4>
-                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">Java</span><span class="badge bg-success">JavaFX</span><span class="badge bg-success">MSSQL</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span></p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </ng-template>  
-            <ng-template carouselSlide>
-                <div class="portfolio-card-container">
-                    <a href="#" class="portfolio-card">
-                        <img id="img_1" src="../../assets/img/projects/Book shop.JPG" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4 id="cat_1">Book shop<br>Desktop Application Development</h4>
-                                <p class="font-weight-normal" id="desc_1"><span class="badge bg-success">Java</span><span class="badge bg-success">JavaFX</span><span class="badge bg-success">MSSQL</span><span class="badge bg-success">SceneBuilder</span><span class="badge bg-success">MVC</span></p>
-                            </span>                         
-                        </span>                     
-                    </a>
-                </div>
-            </ng-template>  
-              
+               -->
         </owl-carousel-o>
       </div>
 </div>
-  <!--   <owl-carousel-o [options]="customOptions">
-
-    <ng-container *ngFor="let slide of slidesStore">
-      <ng-template carouselSlide [id]="slide.id">
-        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-      </ng-template>
-    </ng-container>
-
-  </owl-carousel-o> -->

@@ -10,10 +10,24 @@ body {
     
     color: #212529;
 }
+/* On Selection */
+ p::selection,input::selection,textarea::selection , address::selection, li a::selection{
+  color: #ffffff;
+  background-color: #000000;
+ }
+ h2::selection,h3::selection ,li::selection, h4::selection, strong::selection{
+  color: #f5f5f5;
+  background-color: #161616;
+ }
+ span::selection,b::selection{
+  color: #c0c0c0;
+  background-color: #1f1f1f;
+ }
 /* Portfolio section */
 /*  THIS CSS STYLE IS REPEATED FOR ALL SECTIONS */
 .portfolio-section {
     padding: 7rem 0; 
+    margin-top: 5rem;
   }
     .portfolio-section .heading, .portfolio-section .subheading {
       color: #000000; }
@@ -60,9 +74,6 @@ body {
   }
 
 /*Owl carousel styles*/
-.owl-stage-outer{
-  /* width: 85vw; */
-}
 .owl-nav{
   /* position: absolute;
   width: 100%;
@@ -106,7 +117,20 @@ body {
 .owl-dots .owl-dot.active span{
   background: #0389ff!important;
 }
-/* .owl-dots .owl-dot:hover span {
-  background: rgba(77, 77, 77, 0.2)!important;
-} */
-
+/* Common wavy line */
+.wave > div{
+  width: 90px;
+  height: 20px;
+}
+.moving-line{
+  position: relative;
+  width: 100%;
+}
+@keyframes moveWaves {
+  0% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}

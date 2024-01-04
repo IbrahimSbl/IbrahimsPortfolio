@@ -1,23 +1,4 @@
-.wave > div{
-    width: 90px;
-    height: 20px;
-}
-.moving-line{
-    position: relative;
-    width: 100%;
-}
-@keyframes moveWaves {
-    0% {
-      transform: translateX(-20px);
-    }
-    100% {
-      transform: translateX(20px);
-    }
-  }
-/* 
-  .moving-line {
-    animation: moveWaves 2s linear infinite;
-  } */
+
 .service{
     /* border:1px solid #0389ff; */
     position: relative;

@@ -1,7 +1,4 @@
-.wave > div{
-    width: 90px;
-    height: 20px;
-}
+
 .portfolio-card-container{
     margin:3px;
 }
@@ -10,8 +7,8 @@
     position: relative;
     overflow: hidden;
 }
-.portfolio-card >a >img {
-    min-height: 270px;
+.portfolio-card-img {
+    height: 280px;
 }
 .portfolio-card:hover {
     text-decoration: none;
@@ -49,7 +46,7 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-
+    justify-content: center;
 }
 .portfolio-card-caption > h4{
     font-size: 17px;

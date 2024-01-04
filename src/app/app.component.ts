@@ -14,7 +14,8 @@ export class AppComponent implements OnInit{
     AOS.init({
       duration: 800, // Duration of the animation in milliseconds
       easing: 'ease-in-out', // Easing function
-      offset: 200 // Offset (in pixels) from the original trigger point
+      offset: 200, // Offset (in pixels) from the original trigger point
+      once: true
     });
   }
 }

@@ -14,6 +14,9 @@ import { ServicesComponent } from './services/services.component';
 import { ProjectComponent } from './project/project.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ContactComponent } from './contact/contact.component';
+import { SecondAboutComponent } from './second-about/second-about.component';
+import { ExperienceComponent } from './experience/experience.component';
+import { DetialedProjectComponent } from './detialed-project/detialed-project.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent,
     ServicesComponent,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    SecondAboutComponent,
+    ExperienceComponent,
+    DetialedProjectComponent
   ],
   imports: [
     BrowserModule,

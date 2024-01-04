@@ -1,0 +1,71 @@
+.experience>div{
+    position: relative;
+}
+.experience .exp-column {
+    margin-top: 30px;
+    padding: 25px 30px;
+    background: #e9ecef;
+}
+.experience .exp-column::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    /* top: 30px; */
+    top: 0px;
+    right: 100%;
+    /* left: 14px; */
+    left: 0px;
+    background:#0389ff;/*  #AF9483; */
+}
+.experience .exp-column:hover::before {
+    transition: .3s;
+    /* right: 14px; */
+    right: 0px;
+}
+.experience .exp-column::after {
+    position: absolute;
+    content: "";
+    height: 3px;
+    bottom: 0;
+    /* right: 14px; */
+    right: 0px;
+    left: 100%;
+    background: #0389ff;
+}
+.experience .exp-column:hover::after {
+    transition: .3s;
+    /* left: 14px; */
+    left: 0px;
+}
+.experience .exp-date {
+    margin-bottom: 5px;
+    color: #666666;
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.exp-date span {
+    font-weight: 400;
+    font-style: italic;
+}
+.exp-company {
+    margin-bottom: 0;
+    color: #3e9ef1;
+    font-size: 18px;
+    font-weight: 400;
+}
+.exp-designation {
+    margin-bottom: 10px;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+}
+.exp-detail {
+    list-style: circle;
+    margin-bottom: 0;
+}
+.exp-detail li::marker{
+    color: #00adff;
+}
+
