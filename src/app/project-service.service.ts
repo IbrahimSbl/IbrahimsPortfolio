@@ -6,25 +6,17 @@ import { project } from '../types/project';
   providedIn: 'root'
 })
 export class ProjectService {
-  private specProject:any = new BehaviorSubject({mgSrc: '',
-    detailedImg: [''],
-    title: '',
-    category: '',
-    desc: '',
-    link: '',
-    frontEnd: [''],
-    backEnd: ['']
-});
+  private specProject:any = null;
 
   constructor() { }
 
   // getter
   getProject(){
-    return this.specProject.asObservable();
+    return this.specProject;
   }
 
   // setter
   setProject(proj: project) {
-    this.specProject.next(proj);
+    this.specProject = proj;
   }
 }

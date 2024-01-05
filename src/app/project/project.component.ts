@@ -52,7 +52,7 @@ export class ProjectComponent {
     },
     {
       imgSrc: "Airline reservation.jpg",
-      detailedImg: ["Airline reservation.jpg"],
+      detailedImg: ["Airline reservation.jpg","Airline reservation2.png","Airline reservation3.png"],
       title: "Airline reservation",
       category: "Desktop Application Development",
       desc: ` Developed an Airline Reservation System desktop application using JavaFX for the user interface.
@@ -77,7 +77,7 @@ export class ProjectComponent {
       • Utilized Scene Builder to design an intuitive user interface, enhancing user experience.
       • Implemented features enabling users to explore available books, update inventory, and make purchases.
       • Provided functionalities to manage book data, including additions, updates, and deletions.`,
-      link: "",
+      link: "hq",
       frontEnd: ['JavaFX','SceneBuilder'],
       backEnd: ['Java','MSSQL','MVC']
     },
@@ -125,7 +125,7 @@ export class ProjectComponent {
       },
     {
       imgSrc: "jewelryApp.jpeg",
-      detailedImg: ["jewelryApp.jpeg"],
+      detailedImg: ["jewelryApp.jpeg","jewelryApp2.jpeg","jewelryApp3.jpeg"],
       title: "Jewelry Shop API and Customer Interface Websites",
       category: "Web Development",
       desc: `Developed a Jewelry Shop API that manages the jewelry item database.
@@ -141,7 +141,7 @@ export class ProjectComponent {
       backEnd: ['C#','ASP.Net Core','MSSQL']
     }
   ];
-  
+
   constructor(private router: Router, private projectService: ProjectService){
 
   }

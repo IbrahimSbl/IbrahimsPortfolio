@@ -2,15 +2,30 @@
     font-weight: 400;
     font-size: 13px;
     background-color: #ffffff;
+    box-shadow: 20px 8px 20px 0px #ededed;
+    
+}
+.footerQ{
+    font-size: 16px;
+    color: dimgrey;
+    letter-spacing: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.footerQ > i{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #919191;
 }
 .site-footer .splitter{
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 30px;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 10%;
     height: 1px;
-    width: 100%;
+    padding-right: 5%;
+    padding-left: 5%;
+    width: 80%;
     background-color: #bdc9c9;
 }
 .site-footer h3 ,.site-footer address{

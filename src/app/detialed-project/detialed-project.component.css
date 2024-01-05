@@ -1,0 +1,16 @@
+
+.detialed-card-container{
+    /* align-items: center; */
+} 
+.detialed-card-container img{
+    /* height: 450px!important; */
+}
+h5{
+    font-size: 19px;
+    padding-top: 4px;
+}
+.skills > span{
+    font-size: 14px;
+    font-weight: 500;
+    margin: 2px;
+}

@@ -1,35 +1,37 @@
 <div class="portfolio-section site-footer mt-5 pt-3 pb-5" id="footer-section">
     <div class="container">
       <!-- <div class="splitter"></div> -->
-      <div class="row align-items-center justify-content-center">
+      <div class="row align-items-center justify-content-around">
      
-        <div class="col-lg-6 widget">
+        <div class="col-lg-8 widget">
           <div class="widget">
+            <h4 class="mb-3 footerQ">"The only person you are destined to become is the person you decide to be." -<i>Ralph Waldo Emerson</i> </h4>
+            <div class="splitter"></div>
             <ul class="list-unstyled d-flex flex-wrap justify-content-around gap-2 links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a routerLink="/" class="nav-link ">Home</a></li>
+              <li><a fragment="about-section" routerLink="." class="nav-link">About</a></li>
+              <li><a fragment="experience-section" routerLink="." class="nav-link">Experience</a></li>
+              <li><a fragment="services-section" routerLink="/" class="nav-link">Services</a></li>
+              <li><a fragment="projects-section" routerLink="/" class="nav-link">Projects</a></li>
+              <li><a fragment="contact-section" routerLink="/" class="nav-link" >Contact</a></li>
             </ul>
           </div> <!-- /.widget -->
         </div> <!-- /.col-lg-3 -->
    
-        <div class="col-lg-6 widget">
+        <div class="col-lg-4 widget">
           <div class="">
             <h3>Contact</h3>
-            <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+            <address>Hadath , Beirut , Lebanon</address>
             <ul class="list-unstyled links mb-4">
-              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
-              <li><a href="mailto:info@mydomain.com">info&#64;mydomain.com</a></li>
+              <li><a href="tel://0096176099325">+961 76-099-325</a></li>
+              <li><a href="mailto:ibrahimsbl1234@gmail.com">ibrahimsbl1234&#64;gmail.com</a></li>
             </ul>
 
             <h3>Connect</h3>
             <ul class="list-unstyled social d-flex flex-wrap gap-3">
-              <li><a href="#"><span class="fa fa-google"></span></a></li>
-              <li><a href="#"><span class="fa fa-github"></span></a></li>
-              <li><a href="#"><span class="fa fa-linkedin"></span></a></li>
+              <li><a href="mailto:ibrahimsbl1234@gmail.com"><span class="fa fa-google"></span></a></li>
+              <li><a href="https://github.com/IbrahimSbl"><span class="fa fa-github"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/ibrahim-al-siblani-043398211/"><span class="fa fa-linkedin"></span></a></li>
             </ul>
 
           </div> <!-- /.widget -->
@@ -43,14 +45,7 @@
 
       <div class="row mt-5">
         <div class="col-12 text-center">
-          <!-- 
-            **==========
-            NOTE: 
-            Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
-
-            **==========
-          -->
-          <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
+          <p class="mb-0">Copyright &copy; {{date}}. All Rights Reserved. &mdash; Ibrahim AL Siblani  <!-- License information: https://untree.co/license/ -->
           </p>
         </div>
       </div>
