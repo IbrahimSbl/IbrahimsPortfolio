@@ -30,7 +30,7 @@
                 <ng-template carouselSlide [id]="''+index">
                     <div class="detialed-card-container">
                         <img  
-                            [src]="'../../assets/img/projects/'+slide" 
+                            [src]="'assets/img/projects/'+slide" 
                             class="portfolio-card-img" 
                             [alt]="slide"
                         >  
@@ -42,9 +42,9 @@
             <div 
                 class="images-item col-lg-5 col-sm-12 " 
                 *ngFor="let imgs of specProject.detailedImg"
-                [photoGallery]="'../../assets/img/projects/'+imgs"
+                [photoGallery]="'assets/img/projects/'+imgs"
                 >
-              <img [src]="'../../assets/img/projects/'+imgs" />
+              <img [src]="'assets/img/projects/'+imgs" />
             </div>
         </div>
     </div>

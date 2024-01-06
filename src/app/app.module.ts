@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { DEFAULT_OPTIONS, PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
