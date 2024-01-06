@@ -15,13 +15,14 @@
         [ngClass]="isNavbarOpened ? 'd-none' : 'd-inline-block'"
         class="ml-auto float-end"
       >
-        <span><img src="../../assets/img/menuToggle.svg" alt="" srcset="" style="width: 30px;"></span>
+      <!-- <img src="../../assets/img/menuToggle.svg" alt="" srcset="" style="width: 30px;"> -->
+        <span class="hamburger"><i class="fas fa-bars" ></i></span>
       </a>
     </div>
   </div>
 </nav>    
 <div 
-  [ngClass]="isNavbarOpened ? 'd-inline-block site-mobile-menu' : 'd-none'" 
+  [ngClass]="isNavbarOpened ? 'site-mobile-menu' : ''" 
   id="main-navbar" 
   class="navbar d-flex flex-column justify-content-start float-end"
   >
@@ -29,7 +30,7 @@
     <span class="navCloseToggle"
         (click)="navbarOpened()"
     >       
-        <img src="../../assets/img/closeToggle.svg" />
+        X
     </span>
 
     <ul >

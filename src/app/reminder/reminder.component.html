@@ -1,0 +1,16 @@
+<div 
+    class="reminder-container" 
+    [ngClass]="show ? 'd-flex flex-wrap justify-content-center ' : 'd-none'"
+    data-aos="fade-up"
+    data-aos-duration="1300"
+    >
+    <div class=" reminder" >
+        <ul>
+            <li>This is a new version of my portfolio it is constructed using Angular.</li>
+            <li>While the <a href="https://portfolioforibrahim.000webhostapp.com/" target="_blank">previous version</a> was constructed using PHP.</li>
+        </ul>
+    </div>
+    <div class="reminder-close" (click)="toggleReminder()">
+        X
+    </div>
+</div>

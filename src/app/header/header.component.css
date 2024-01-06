@@ -6,7 +6,6 @@
     overflow: hidden;
     background: rgba(255, 255, 255, 0.75); /* Adjust the alpha value for transparency */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow properties */
-    backdrop-filter: blur(10px); /* Adjust the blur effect for a glassy appearance */
     transition: all 0.6s ease-in-out; /* Add a smooth transition effect */
 
 }
@@ -15,14 +14,29 @@
     line-height: 30px;
     text-decoration: underline;
 }
+.hamburger > i{
+    font-size: 30px;
+    color: #0389ff;
+    transition: 0.3s all linear;
+}
+.hamburger > i:hover{
+    color: #0576da;
+    cursor: pointer;
+}
+
 .navCloseToggle{
     width: 100%;
     display: flex;
     justify-content: end;
+    padding: 0px 25px;
+    font-size: 21px;
+    font-weight: 600;
+    transition: .3s all linear;
 }
-    .navCloseToggle img{
-        width: 2rem;
-    }
+.navCloseToggle:hover{
+    color: #0389ff;
+    cursor: pointer;
+}
 .site-mobile-menu {
 /* 
     -webkit-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
@@ -32,9 +46,10 @@
     -webkit-box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
     box-shadow: -10px 0 20px -10px rgba(0, 0, 0, 0.1);
 
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(0%) !important;
+    -ms-transform: translateX(0%) !important;
+    transform: translateX(0%) !important; 
+
     /* width: 300px!important; */
     
 }
@@ -47,11 +62,11 @@
     background: #ffffff;
     height: calc(100vh);
     top: 0;    
-
-    -webkit-transform: translateX(0%);
-    -ms-transform: translateX(0%);
-    transform: translateX(0%); 
      
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+
     -webkit-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
     -o-transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1);
     transition: 0.8s all cubic-bezier(0.23, 1, 0.32, 1); 
@@ -60,12 +75,12 @@
 .navbar > ul{
     list-style: none;
     width: 100%;
-    line-height: 2;
+    line-height: 2.4;
 }
-    .navbar > ul > li > i{
-        font-size: 14px;
+    .navbar > ul > li {
+        font-size: 16px;
     }
-    .navbar > ul > li > i:hover{
+    .navbar > ul > li:hover{
         color: #0389ff;
     }
 .activeLink{

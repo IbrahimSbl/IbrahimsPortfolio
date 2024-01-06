@@ -19,6 +19,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { DetialedProjectComponent } from './detialed-project/detialed-project.component';
 import { ErrorComponent } from './error/error.component';
+import { ReminderComponent } from './reminder/reminder.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { ErrorComponent } from './error/error.component';
     ContactComponent,
     ExperienceComponent,
     DetialedProjectComponent,
-    ErrorComponent
+    ErrorComponent,
+    ReminderComponent
   ],
   imports: [
     BrowserModule,
