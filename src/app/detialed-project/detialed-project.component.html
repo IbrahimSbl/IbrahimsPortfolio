@@ -1,20 +1,5 @@
 <div class="container" id="project-detial">
-    <div class="row">
-        <div class="col-lg-5 mb-4" data-aos="zoom-in">
-            <owl-carousel-o [options]="customOptions">
-                <ng-container *ngFor="let slide of specProject.detailedImg;let index = index">
-                    <ng-template carouselSlide [id]="''+index">
-                        <div class="detialed-card-container">
-                            <img  
-                                [src]="'../../assets/img/projects/'+slide" 
-                                class="portfolio-card-img" 
-                                [alt]="slide"
-                            >  
-                        </div>
-                    </ng-template>  
-                </ng-container>
-            </owl-carousel-o>
-       </div>
+    <div class="row ">
        <div class="col-lg-7 ">
             <div class="d-flex flex-wrap justify-content-between">
                 <h3>{{specProject.title}}</h3>
@@ -39,6 +24,30 @@
             </div>
             
        </div> 
+       <div class="col-lg-5 mb-4" data-aos="zoom-in">
+        <!-- <owl-carousel-o [options]="customOptions">
+            <ng-container *ngFor="let slide of specProject.detailedImg;let index = index">
+                <ng-template carouselSlide [id]="''+index">
+                    <div class="detialed-card-container">
+                        <img  
+                            [src]="'../../assets/img/projects/'+slide" 
+                            class="portfolio-card-img" 
+                            [alt]="slide"
+                        >  
+                    </div>
+                </ng-template>  
+            </ng-container>
+        </owl-carousel-o> -->
+        <div class="images row" [photoGalleryGroup]="{ arrowKeys: false ,arrowEl: false, closeEl: false, zoomEl: false ,indexIndicatorSep: ' / ' }">
+            <div 
+                class="images-item col-lg-5 col-sm-12 " 
+                *ngFor="let imgs of specProject.detailedImg"
+                [photoGallery]="'../../assets/img/projects/'+imgs"
+                >
+              <img [src]="'../../assets/img/projects/'+imgs" />
+            </div>
+        </div>
+    </div>
     </div>
 </div>
 

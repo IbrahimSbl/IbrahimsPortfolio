@@ -3,6 +3,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ProjectService } from '../project-service.service';
 import { project } from '../../types/project';
 import { Router } from '@angular/router';
+import { PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
+import { PhotoGalleryGroupDirective } from '@twogate/ngx-photo-gallery';
 
 @Component({
   selector: 'app-detialed-project',
@@ -44,7 +46,12 @@ export class DetialedProjectComponent implements OnInit{
     backEnd: ['']
   };
   //Inject project service
-  constructor(private router: Router ,private ps: ProjectService) {}
+  constructor(private router: Router ,private ps: ProjectService) {
+    
+    // let options:PhotoGalleryGroupDirective = {
+      
+    // };
+  }
 
   ngOnInit(): void {
     this.specProject= this.ps.getProject();

@@ -1,9 +1,24 @@
 
-.detialed-card-container{
-    /* align-items: center; */
-} 
-.detialed-card-container img{
-    /* height: 450px!important; */
+.images-item{
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5px;
+    padding: 0;
+    border: 2px #6a6868 solid;
+}
+    .images-item img{
+        max-width: inherit;
+        width: -webkit-fill-available;
+        height: 200px;
+        overflow: hidden;
+    }
+/* Gallery style */
+.pswp__button .pswp__button--arrow--left{
+    content: '\2190' !important;
+}
+.pswp__button .pswp__button--arrow--right{
+    content: '\003e' !important;
 }
 h5{
     font-size: 19px;

@@ -1,18 +1,4 @@
-#about-section{
-    padding-top: 170px;
+.myImg{
+    height: 450px;
+    width: 100%;
 }
-
-
-#about-section > div{
-    background-color: #0389ff;
-    padding: 50px;
-}
-.author-wrap{
-   position: relative;
-   margin-top: -100px;
-}
-.author-wrap > img{
-    width: 200px;
-    height: 200px;
-}
-

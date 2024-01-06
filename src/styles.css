@@ -75,11 +75,6 @@ body {
 
 /*Owl carousel styles*/
 .owl-nav{
-  /* position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  top: 80px; */
   position: absolute;
   display: flex;
   justify-content: space-between;
@@ -90,10 +85,6 @@ body {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   z-index: -1;
-}
-.owl-carousel .owl-stage {
-  display: flex;
-  align-items: center;
 }
   .owl-nav .owl-prev,
   .owl-nav .owl-next {
@@ -124,6 +115,13 @@ body {
 /* this is for the owl carousel inside the detialed project view */
 .detialed-card-container{
   margin: 9px;
+}
+/* Gallery style */
+.pswp__button .pswp__button--arrow--left{
+  content: '\2190' !important;
+}
+.pswp__button .pswp__button--arrow--right{
+  content: '\003e' !important;
 }
 /* Common wavy line */
 .wave > div{

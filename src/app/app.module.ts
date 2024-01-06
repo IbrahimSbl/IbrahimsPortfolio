@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { GalleryModule } from '@ngx-gallery/core';
-import { LightboxModule } from '@ngx-gallery/lightbox';
+import { DEFAULT_OPTIONS, PhotoGalleryModule } from '@twogate/ngx-photo-gallery';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +16,6 @@ import { AboutComponent } from './about/about.component';
 import { ServicesComponent } from './services/services.component';
 import { ProjectComponent } from './project/project.component';
 import { ContactComponent } from './contact/contact.component';
-import { SecondAboutComponent } from './second-about/second-about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { DetialedProjectComponent } from './detialed-project/detialed-project.component';
 import { ErrorComponent } from './error/error.component';
@@ -33,7 +31,6 @@ import { ErrorComponent } from './error/error.component';
     ServicesComponent,
     ProjectComponent,
     ContactComponent,
-    SecondAboutComponent,
     ExperienceComponent,
     DetialedProjectComponent,
     ErrorComponent
@@ -44,6 +41,7 @@ import { ErrorComponent } from './error/error.component';
     NgbModule,
     BrowserAnimationsModule,
     CarouselModule,
+    PhotoGalleryModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -39,7 +39,7 @@ export class ProjectComponent {
   projectList: project[] = [
     {
       imgSrc: "Restaurant website.jpg",
-      detailedImg: ["Restaurant website.jpg"],
+      detailedImg: ["Restaurant website.jpg","RestuarantWebsite.jpeg"],
       title: "Restaurant website",
       category: "Web Development",
       desc: ` Admin and customer views using HTML, CSS, JavaScript, and Bootstrap for frontend.
@@ -68,7 +68,7 @@ export class ProjectComponent {
     },
     {
       imgSrc: "Book shop.jpg",
-      detailedImg: ["Book shop.jpg"],
+      detailedImg: ["Book shop.jpg","Book shop2.jpg"],
       title: "Book shop",
       category: "Desktop Application Development",
       desc: ` Created a Book Shop desktop application using JavaFX that follows the MVC (Model-View-Controller) architecture.
@@ -77,7 +77,7 @@ export class ProjectComponent {
       • Utilized Scene Builder to design an intuitive user interface, enhancing user experience.
       • Implemented features enabling users to explore available books, update inventory, and make purchases.
       • Provided functionalities to manage book data, including additions, updates, and deletions.`,
-      link: "hq",
+      link: "",
       frontEnd: ['JavaFX','SceneBuilder'],
       backEnd: ['Java','MSSQL','MVC']
     },
