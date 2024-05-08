@@ -21,28 +21,35 @@
           <form action="#">
             <div class="row">
               <div class="col-lg-6 form-group">
-                <input type="text" class="form-control" placeholder="Firstname">
+                <input type="text" [(ngModel)]="formData.FirstName" name="Firstname" class="form-control" placeholder="Firstname">
               </div>
               <div class="col-lg-6 form-group">
-                <input type="text" class="form-control" placeholder="Lastname">
+                <input type="text" [(ngModel)]="formData.LastName" name="Lastname" class="form-control" placeholder="Lastname">
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 form-group">
-                <input type="email" class="form-control" placeholder="Email address">
+                <input type="email" [(ngModel)]="formData.Email" name="Email" class="form-control" placeholder="Email address">
               </div>
             </div>
             <div class="row">
               <div class="col-lg-12 form-group">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Write your message..."></textarea>
+                <textarea name="Message" [(ngModel)]="formData.Message"  id="" cols="30" rows="7" class="form-control" placeholder="Write your message..."></textarea>
               </div>
             </div>
             <div class="row pt-2">
               <div class="col-12 form-group">
-                <input type="submit" class="btn btn-black" value="Send Message">
+                <input type="submit" (click)="sendEmail()" class="btn btn-black" value="Send Message">
               </div>
             </div>
+            <div class="form-error">
+              <p>{{formData.FirstErr}}</p>
+              <p>{{formData.LastErr}}</p>
+              <p>{{formData.MsgErr}}</p>
+              <p>{{formData.EmailErr}}</p>
+            </div>
           </form>
+
         </div>
         <div class="col-lg-6" data-aos="fade-left">
           <div id="map">

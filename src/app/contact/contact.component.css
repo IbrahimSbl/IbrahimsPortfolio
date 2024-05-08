@@ -19,6 +19,9 @@
 textarea.form-control {
     height: auto;
 }
+.form-error{
+    color: crimson;
+}
 
 #map {
     position: relative;
