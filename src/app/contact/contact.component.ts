@@ -18,7 +18,6 @@ export class ContactComponent {
     this.formData.EmailErr = (this.formData.Email == null || !emailRegex.test(this.formData.Email)) ? "Invalid Email format." : null;
 
     return !(this.formData.FirstErr || this.formData.LastErr || this.formData.MsgErr || this.formData.EmailErr);
-    
   }
 
   sendEmail() {
