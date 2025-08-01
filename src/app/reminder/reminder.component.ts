@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './reminder.component.css'
 })
 export class ReminderComponent {
-  show:boolean = true;
+  show:boolean = false;
   toggleReminder(){
     this.show=!this.show;
   }
