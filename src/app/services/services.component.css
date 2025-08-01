@@ -8,7 +8,6 @@
     }
 }
 .service{
-    /* border:1px solid #0389ff; */
     position: relative;
     min-height: 230px;
     border: 1px solid #dee2e6;
@@ -23,7 +22,6 @@
     align-items: center;
 }
 .service:hover .service-subtitle{
-    /*bottom: 7px;*/
     top: 120px;
     height: fit-content;
     opacity: 1;
@@ -58,4 +56,3 @@
     -webkit-transition: all, 0.3s;
     transition: all, 0.3s;
 }
-
