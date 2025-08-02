@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ibrahims-portfolio": {
+    "IbrahimsPortfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,8 +23,8 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ibrahims-portfolio",
-            "baseHref": "/ibrahims-portfolio/",
+            "outputPath": "dist/IbrahimsPortfolio",
+            "baseHref": "/IbrahimsPortfolio/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
